@@ -1,18 +1,17 @@
-import Footer from "../components/Footer";
+import Layout from "../components/Layout";
 import Main from "../components/Main";
-import { getAllProjects } from "../lib/data";
+import { getAllProjects } from "../lib/projects";
 
 export default function Home({ projects }) {
   return (
-    <>
+    <Layout title={"Mapo Portfolio & CV"}>
       <Main projects={projects} />
-      <Footer />
-    </>
+    </Layout>
   );
 }
 
 export const getStaticProps = async () => {
-  const projects = await getAllProjects();
+  const projects = getAllProjects();
   return {
     props: {
       projects,
