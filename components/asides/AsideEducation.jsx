@@ -21,8 +21,8 @@ export const AsideEducation = () => {
               >
                 Henry
               </a>{" "}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-              veritatis voluptas veniam.
+              More than 800 hours of programming based on practices and real
+              projects.
             </span>
           </li>
 
@@ -32,8 +32,8 @@ export const AsideEducation = () => {
               <h4 className="font-semibold">System Administrator</h4>
             </div>
             <span className="text-base font-light pl-7">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-              veritatis voluptas veniam.
+              Certificate of Higher Education (HNC). IES Alfonso XI Alcalá la
+              Real, Jaén.
             </span>
           </li>
         </ul>

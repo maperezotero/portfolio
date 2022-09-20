@@ -10,6 +10,7 @@ import {
 import Image from "next/image";
 import { FaExternalLinkAlt, FaHome } from "react-icons/fa";
 import Link from "next/link";
+import { Technologies } from "../../components/projects";
 
 const Project = ({ project }) => {
   return (
@@ -28,9 +29,11 @@ const Project = ({ project }) => {
           </div>
           <div className="bg-[#1e2124] py-4 px-8 rounded-md mt-8">
             <h1 className="text-2xl font-bold my-2">{project.name}</h1>
-            <p>{project.excerpt}</p>
+            <p className="text-xl pb-4">{project.excerpt}</p>
+            <div dangerouslySetInnerHTML={{ __html: project.description }} />
+            <Technologies tech={project.tech} />
             <div className="flex justify-between items-center py-8">
-              <Link href="/">
+              <Link href="/" scroll={false}>
                 <a className="text-[#49ac43]">
                   <div className="flex items-center gap-2 py-2">
                     <FaHome /> Back to home

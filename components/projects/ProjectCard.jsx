@@ -6,13 +6,15 @@ export const ProjectCard = ({ project }) => {
   return (
     <div className="w-full flex flex-wrap flex-col md:flex-row mb-10">
       <div className="w-full md:w-4/12 mb-2">
-        <Image
-          src={`/images/projects/${project.img}`}
-          alt={project.name}
-          width={1349}
-          height={768}
-          className="rounded-md"
-        />
+        <Link href={`/project/${project.id}`}>
+          <Image
+            src={`/images/projects/${project.img}`}
+            alt={project.name}
+            width={1349}
+            height={768}
+            className="rounded-md cursor-pointer"
+          />
+        </Link>
       </div>
       <div className="w-full md:w-8/12 md:pl-8">
         <h3 className="text-lg font-bold mb-2">{project.name}</h3>
